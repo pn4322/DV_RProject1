@@ -1,14 +1,36 @@
-<html>
+---
+output:
+  html_document:
+    pandoc_args: [
+      "+RTS", "-K64m",
+      "-RTS"
+    ]
+---
+## Age vs Fare (with null) 
 
-<head>
-<title>Title</title>
-</head>
+![](./Rplot1.png) 
 
-<body>
+## Age vs Fare (without null) 
 
-<p>This is an R HTML document. When you click the <b>Knit HTML</b> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+![](./Rplot2.png) 
 
+## Survived vs Fare  
 
+![](./Rplot3.png) 
+
+## Survived vs Fare by class 
+
+![](./Rplot4.png) 
+
+## Survived vs Fare for children under 10 years of age 
+
+![](./Rplot5.png) 
+
+## Survived vs Age 
+
+![](./Rplot6.png) 
+
+## Head and summary of data 
 
 ```{r}
 require("jsonlite")
@@ -19,12 +41,3 @@ summary(df)
 head(df)
 ```
 
-
-<p>You can also embed plots, for example:</p>
-
-```{r}
-plot(cars)
-```
-
-</body>
-</html>
