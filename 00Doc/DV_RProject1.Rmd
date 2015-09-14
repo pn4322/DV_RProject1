@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<title>Title</title>
+</head>
+
+<body>
+
+<p>This is an R HTML document. When you click the <b>Knit HTML</b> button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+
+
+
+```{r}
+require("jsonlite")
+require("RCurl")
+df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_shs855', PASS='orcl_shs855', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
+
+summary(df)
+head(df)
+```
+
+
+<p>You can also embed plots, for example:</p>
+
+```{r}
+plot(cars)
+```
+
+</body>
+</html>
