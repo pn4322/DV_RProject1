@@ -42,7 +42,7 @@ This plot displays the survivors segregated by sexes (male and female) and accor
 source("../02Visualization/NewGraph.R", echo = TRUE)
 ```
 
-## Head and Summmary
+## Head and Summary
 
 ```{r}
 source("../01Data/Data.R", echo = TRUE)
