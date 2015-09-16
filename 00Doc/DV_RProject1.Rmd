@@ -7,8 +7,6 @@ output:
     ]
 ---
 
-The query statement selects all from titanic in the sql section. including null.
-The variable names are changed to Survived and Fare.
 
 ## Steps 
 
