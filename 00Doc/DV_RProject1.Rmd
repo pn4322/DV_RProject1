@@ -8,10 +8,10 @@ output:
 ---
 
 
-## Steps 
+## Steps
 
-1.The query statement is changed for the sql section to select all from titanic, including null.
-The variables are changed to Survived (continuous variable) and Fare(continuous variable), and the color to SEX(discrete variable).
+1. The query statement is changed for the sql section to select all from titanic, including null.
+The variables are changed to Survived (continuous variable) and Fare(continuous variable), and the color to SEX(discrete variable). 
 
 2. The query statement is changed for the sql section to select all from titanic except null.
 The variables are changed to Age(continuous variable) and Fare(continuous variable), and the color to SEX(discrete variable).
@@ -33,14 +33,16 @@ Facet grid faceting is done here, based on the variable Survived.
 source("../02Visualization/DV_RProject.R", echo = TRUE)
 ```
 
-```{r}
-source("../02Visualization/NewGraph.R", echo = TRUE)
-```
-
 6. The query statement is changed for the sql section to select all from titanic except null.
 The variables are changed to Sex (discrete variable) and Age (continuous variable), and the color is changed to SEX (discrete variable).
 This plot displays the survivors segregated by sexes (male and female) and according to their ages. 
 
+
+```{r}
+source("../02Visualization/NewGraph.R", echo = TRUE)
+```
+
+## Head and Summmary
 
 ```{r}
 source("../01Data/Data.R", echo = TRUE)
