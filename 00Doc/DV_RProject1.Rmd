@@ -6,38 +6,25 @@ output:
       "-RTS"
     ]
 ---
-## Age vs Fare (with null) 
 
-![](./Rplot1.png) 
+The query statement selects all from titanic in the sql section. including null.
+The variable names are changed to Survived and Fare.
 
-## Age vs Fare (without null) 
-
-![](./Rplot2.png) 
-
-## Survived vs Fare  
-
-![](./Rplot3.png) 
-
-## Survived vs Fare by class 
-
-![](./Rplot4.png) 
-
-## Survived vs Fare for children under 10 years of age 
-
-![](./Rplot5.png) 
-
-## Survived vs Age 
-
-![](./Rplot6.png) 
-
-## Head and summary of data 
+#INsert steps herererereeeeeee
 
 ```{r}
-require("jsonlite")
-require("RCurl")
-df <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query="select * from titanic"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_shs855', PASS='orcl_shs855', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))
-
-summary(df)
-head(df)
+source("../02Visualization/DV_RProject.R", echo = TRUE)
 ```
+
+```{r}
+source("../02Visualization/NewGraph.R", echo = TRUE)
+```
+
+# INsert random talk about the new and interesting graph that was not created in class...   explain what it is. lol
+
+```{r}
+source("../01Data/Data.R", echo = TRUE)
+```
+
+
 
