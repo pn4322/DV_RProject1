@@ -33,6 +33,8 @@ Facet grid faceting is done here, based on the variable Survived.
 source("../02Visualization/DV_RProject.R", echo = TRUE)
 ```
 
+## New Graph 
+
 6. The query statement is changed for the sql section to select all from titanic except null.
 The variables are changed to Sex (discrete variable) and Age (continuous variable), and the color is changed to SEX (discrete variable).
 This plot displays the survivors segregated by sexes (male and female) and according to their ages. 
